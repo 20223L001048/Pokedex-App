@@ -1,0 +1,14 @@
+.stats {
+    display: flex;
+  }
+  
+  .lista-izquierda {
+    flex: 1; /* Ocupa el espacio restante */
+    margin-right: 10px; /* Espacio entre las listas */
+  }
+  
+  .lista-derecha {
+    flex: 1; /* Ocupa el espacio restante */
+    color: rgb(255, 0, 0); /* Color RGB rojo para las letras */
+  }
+  

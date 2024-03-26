@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" style="background-color: #ADD8E6;">
+  <div class="pokebola text-center" style="margin-bottom: 20px;">
+    <img src="https://cdn-icons-png.flaticon.com/128/287/287221.png" alt="Pokebola">
+  </div>
+
+  <ion-label position="stacked" style="color: #fff; font-size: 1.5rem; margin-bottom: 8px;">Correo</ion-label>
+  <ion-item class="vibrant-input" style="margin-bottom: 20px;">
+    <ion-input type="email" placeholder="Correo electrónico" style="color: #fff;" [(ngModel)]="email"></ion-input>
+  </ion-item>
+
+  <ion-label position="stacked" style="color: #fff; font-size: 1.5rem; margin-bottom: 8px;">Contraseña</ion-label>
+  <ion-item class="vibrant-input" style="margin-bottom: 20px;">
+    <ion-input type="password" placeholder="Contraseña" style="color: #fff;" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" color="danger" class="vibrant-button mb-2" (click)="login()">Iniciar Sesión</ion-button>
+
+  <div class="row justify-content-between mb-2">
+    <ion-button color="light" fill="outline" class="vibrant-button col-5 mr-1" style="background-color: #87CEFA; color: #fff;">Twitter</ion-button>
+    <ion-button color="light" fill="outline" class="vibrant-button col-5 ml-1" style="background-color: #4682B4; color: #fff;">Facebook</ion-button>
+  </div>
+
+  <div class="row justify-content-between color:#000000 ">
+    <ion-button color="#000000" fill="clear">Olvidé mi contraseña</ion-button>
+    <ion-button color="#000000" fill="clear">Crear una cuenta</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menuId="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Ash</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" id="main-content">
+  <div class="d-flex flex-column align-items-center justify-content-center mb-5">
+    <div class="mb-3">
+      <img src="https://i.pinimg.com/originals/62/e7/13/62e71368b711f43dc3ab967c1c6a17bb.jpg" alt="Ash" width="150" height="150" style="border-radius: 50%;">
+    </div>
+    <h3 class="mb-0">Ash</h3>
+  </div>
+
+  <ion-button class="mb-3 transparent-button" expand="full" routerLink="/catalogo">
+    <ion-icon slot="start" name="paw-outline"></ion-icon>
+    <ion-label >Pokemones</ion-label>
+  </ion-button>
+
+  <ion-button class="mb-3 transparent-button" expand="full" routerLink="/pokemones">
+    <ion-icon slot="start" name="compass-outline"></ion-icon>
+    <ion-label>Explorar</ion-label>
+  </ion-button>
+
+  <ion-button class="mb-3 transparent-button" expand="full" routerLink="/favoritos">
+    <ion-icon slot="start" name="heart-outline"></ion-icon>
+    <ion-label>Favoritos</ion-label>
+  </ion-button>
+
+  <ion-button class="mb-3 transparent-button" expand="full" routerLink="/inicio-sesion">
+    <ion-icon slot="start" name="settings-outline"></ion-icon>
+    <ion-label>Ajustes</ion-label>
+  </ion-button>
+</ion-content>
+
+<ion-menu side="start" menuId="main-menu" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Opciones</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-button class="vibrant-button transparent-button" expand="full" routerLink="/catalogo">Pokemones</ion-button>
+      <ion-button class="vibrant-button transparent-button" expand="full" routerLink="/pokemones">Explorar</ion-button>
+      <ion-button class="vibrant-button transparent-button" expand="full" routerLink="/favoritos">Favoritos</ion-button>
+      <ion-button class="vibrant-button transparent-button" expand="full" routerLink="/inicio-sesion">Ajustes</ion-button>
+      <ion-button color="danger" class="vibrant-button transparent-button" expand="full" routerLink="/home">Cerrar Sesión</ion-button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
